@@ -9,7 +9,7 @@ public class Main {
         chekOs(1, 2015);
         chekOs(0, 2017);
         chekOs(1, 2013);
-        int dey =chekDistance(58) ;
+        int dey =chekDistance(101) ;
         System.out.println(" Потребуется дней: " + dey);
     }
 
@@ -58,6 +58,7 @@ public class Main {
         int dey = 1;
         if (deliveryDistance > 100) {
             System.out.println(" Доставки нет ");
+            return -1;
         } else {
             if (deliveryDistance > 20) {
                 dey++;
@@ -65,9 +66,7 @@ public class Main {
             if (deliveryDistance > 60) {
                 dey++;
             }
-            return dey;
         }
-
         return dey;
     }
 }
